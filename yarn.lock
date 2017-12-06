@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-shellcheck@0.0.8:
+"shellcheck@github:4u6u57/shellcheck":
   version "0.0.8"
-  resolved "https://registry.yarnpkg.com/shellcheck/-/shellcheck-0.0.8.tgz#796cf6b2d2e80de88df7b73809def485e7fa7a9d"
+  resolved "https://codeload.github.com/4u6u57/shellcheck/tar.gz/05fcad7aa796197bdb6e849f38c7c390e4ccbc30"

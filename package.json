@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/4u6u57/shellcheck#readme",
   "devDependencies": {
-    "shellcheck": "0.0.8"
+    "shellcheck": "github:4u6u57/shellcheck"
   }
 }
