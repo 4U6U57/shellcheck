@@ -1,0 +1,22 @@
+{
+  "name": "test-shellcheck",
+  "version": "1.0.0",
+  "description": "Testing the shellcheck npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4u6u57/shellcheck.git"
+  },
+  "author": "August Valera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4u6u57/shellcheck/issues"
+  },
+  "homepage": "https://github.com/4u6u57/shellcheck#readme",
+  "devDependencies": {
+    "shellcheck": "0.0.8"
+  }
+}
