@@ -2,21 +2,25 @@
 
 Modules=node_modules/
 Bin=$Modules/.bin
+Package=shellcheck
+
+echo "Test results:"
+echo
 
 for Command in "npm install" "npm install --unsafe-perm=true" "yarn install"; do
-  echo "Testing $Command"
   rm -rf $Modules
-  $Command
-  echo
-  if [[ -e $Modules/shellcheck ]]; then
-    echo "shellcheck package installed"
+  $Command 1>&2
+  echo -n "$Command: $Package package "
+  if [[ -e $Modules/$Package ]]; then
+    echo "installed"
   else
-    echo "shellcheck package not installed"
+    echo "not installed"
   fi
+  echo -n "$Command: $Package binary "
   if [[ -e $Bin/shellcheck ]]; then
-    echo "shellcheck binary installed"
+    echo "installed"
   else
-    echo "shellcheck binary not installed"
+    echo "not installed"
   fi
   rm -rf $Modules
   echo
